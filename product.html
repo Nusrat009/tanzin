@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>online shop page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        #form1 {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            border-right: 10px solid #1f604b;
+            border-bottom: 10px solid #1f604b;
+            margin-top: 140px;
+            margin-bottom: 100px;
+            background-color: #3ec195;
+            border-radius: 120px;
+        }
+
+        #f2{
+            margin-top: 23px;
+
+
+
+        }
+
+        table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+  th, td {
+    padding: 15px;
+}
+
+        #foot {
+            background-color: #2d2d30;
+            color: black;
+            padding: 32px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#2c8768;">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="height:50px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+     <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>                        
+      </button>
+                <a class="navbar-brand" href="assignment.html">
+                    <h2 style="font-family:comic sans ms;color:lightskyblue;margin-top:0px;"><b><i>EaSy ShOpPInG</i></b></h2>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="assignment.html">HOME</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCTS<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">ELECTRONICS</a></li>
+                            <li><a href="product.html">DEVICES</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Others</li>
+                            <li><a href="#">CHAIRS</a></li>
+                            <li><a href="#">TABLES</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span> SING UP</a></li>
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="form1">
+        <div class="row">
+            <div class="col-md-6" id="f1">
+                <h2 style="font-family:comic sans ms;"><b><i>PRODUCT DETAILS</i></b></h2>
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="productname">Product Name:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-shopping-cart"></i></span>
+                                <input type="text" class="form-control" id="productname" placeholder="Product Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productid">Last Name:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-shopping-cart"></i></span>
+                                <input type="text" class="form-control input-md" id="productid" placeholder="Product Id">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label><span class="glyphicon glyphicon-calender"></span>Catagory:</label>
+                            <label class="radio-inline"><input class="radio" type="radio" name="optradio">Electronics</label>
+                            <label class="radio-inline"><input class="radio" type="radio" name="optradio">Devices</label>
+                            <label class="radio-inline"><input class="radio"  type="radio" name="optradio">Others</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="price">Price</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="glyphicon glyphicon-eur"></i></span>
+                                <input type="text" class="form-control input-md" id="price" placeholder="Price">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary col-md-6">Save</button>
+                        <button type="submit" class="btn btn-danger col-md-6">Cancel</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6" id="f2">
+                    <button type="submit" class="btn btn-primary col-md-12" onclick="document.getElementById('tab1').style.display='block'">SHOW DETAILS</button><br><br><br>
+                    <table style="width:100%;display:none" id="tab1">
+                            <tr>
+                                <th>Product Name</th>
+                                <th>Product Id</th>
+                                <th>Catagory</th>
+                                <th>Price</th>
+                            </tr>
+                            <tr>
+                                <td>Dell</td>
+                                <td>d00</td>
+                                <td>Devices</td>
+                                <td>4500</td>
+                            </tr>
+                        </table>
+
+                        
+                </div>
+        </div>
+
+    </div>
+
+    <footer class="text-center" id="foot" style="position:fixed;right:0px;bottom:0px;left: 0px;">
+
+    </footer>
+
+</body>
+
+</html>
